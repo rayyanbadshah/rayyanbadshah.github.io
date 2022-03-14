@@ -41,7 +41,7 @@ body {
     
     const size = canvas.height = canvas.width = 32;
     let ctx = canvas.getContext('2d');
-    ctx.fillStyle = 'purple';
+    ctx.fillStyle = 'white';
     ctx.fillRect(0, 0, size, size);
     ctx.clearRect(1, 1, size-2, size-2);
     const map = new CanvasTexture(canvas);
@@ -107,7 +107,7 @@ body {
             }
         }
         mesh.instanceMatrix.needsUpdate = true;
-        scene.rotation.y=time/1;
+        scene.rotation.y=time/0.1;
         renderer.render( scene, camera );
     }
  
